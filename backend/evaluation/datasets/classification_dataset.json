@@ -1,0 +1,392 @@
+[
+  {
+    "id": "T001",
+    "texte": "Bonjour, l'application MyMaroclear affiche une page blanche depuis ce matin. Nous ne pouvons accéder à aucun module.",
+    "classe_attendue": "INCIDENT",
+    "note": "Page blanche MyMaroclear = dysfonctionnement technique → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T002",
+    "texte": "Erreur 500 sur TCS BaNCS lors de la tentative de connexion. Le serveur ne répond plus.",
+    "classe_attendue": "INCIDENT",
+    "note": "Erreur 500 TCS BaNCS = dysfonctionnement technique serveur → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T003",
+    "texte": "La plateforme TCS BANKS est indisponible depuis 9h00. Message : 'Service temporairement indisponible'.",
+    "classe_attendue": "INCIDENT",
+    "note": "TCS BANKS indisponible avec message d'erreur → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T004",
+    "texte": "Nous rencontrons une lenteur extrême sur l'interface de dénouement. Les opérations mettent plus de 5 minutes à se charger.",
+    "classe_attendue": "INCIDENT",
+    "note": "Lenteur extrême interface dénouement = dysfonctionnement technique → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T005",
+    "texte": "Le batch de clôture boursière est bloqué depuis 18h30. Les statuts restent en 'Batch en cours'.",
+    "classe_attendue": "INCIDENT",
+    "note": "Batch clôture bloqué = dysfonctionnement technique système → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T006",
+    "texte": "Le fichier REQ du 15/03/2026 est corrompu. Impossible de l'ouvrir dans notre système comptable.",
+    "classe_attendue": "INCIDENT",
+    "note": "Fichier REQ corrompu = dysfonctionnement fichier métier → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T007",
+    "texte": "Le RMQ de ce jour n'a pas été généré. Notre système de reporting ne l'a pas reçu.",
+    "classe_attendue": "INCIDENT",
+    "note": "RMQ non généré = non-génération document comptable fin de journée → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T008",
+    "texte": "Nous avons reçu le fichier AOE du 10/02/2026 mais il est illisible (format incompatible).",
+    "classe_attendue": "INCIDENT",
+    "note": "AOE illisible/format incompatible = fichier métier corrompu → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T009",
+    "texte": "Le fichier MT547 reçu ce matin contient des données incohérentes. Les montants ne correspondent pas aux opérations saisies.",
+    "classe_attendue": "INCIDENT",
+    "note": "MT547 données incohérentes = fichier métier erroné → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T010",
+    "texte": "Le flux CFT de règlement n'est pas arrivé dans les délais ce jour. Notre back-office est bloqué.",
+    "classe_attendue": "INCIDENT",
+    "note": "Flux CFT non arrivé = non-transmission fichier métier → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T011",
+    "texte": "Impossible de valider les opérations OTC sur la plateforme. Message : 'Impossibilité de prise en charge'.",
+    "classe_attendue": "INCIDENT",
+    "note": "Impossibilité prise en charge OTC = blocage système → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T012",
+    "texte": "Les opérations de pension livrée ne peuvent pas être dénouées. Statut bloqué en masse sur TCS BaNCS.",
+    "classe_attendue": "INCIDENT",
+    "note": "Dénouement pension livrée bloqué = blocage système dénouement → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T013",
+    "texte": "Nous ne pouvons pas initier de transferts Franco. Le bouton 'Valider' est grisé sur MyMaroclear.",
+    "classe_attendue": "INCIDENT",
+    "note": "Bouton validation grisé = bug affichage/dysfonctionnement partiel → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T014",
+    "texte": "Le système affiche 'Pending for Fund Transfer' pour toutes nos opérations de rachat alors que nos comptes sont créditeurs.",
+    "classe_attendue": "INCIDENT",
+    "note": "Statut erroné massif rachat = dysfonctionnement système statuts → INCIDENT (variante few-shot, formulation différente)"
+  },
+  {
+    "id": "T015",
+    "texte": "Les fichiers SWIFT MT202 reçus ce matin sont tous vides. Aucune donnée exploitable.",
+    "classe_attendue": "INCIDENT",
+    "note": "MT202 vides = fichier métier vide → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T016",
+    "texte": "L'interface de reporting génère des erreurs d'affichage. Les colonnes du tableau des positions sont décalées.",
+    "classe_attendue": "INCIDENT",
+    "note": "Erreur affichage reporting = bug affichage → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T017",
+    "texte": "Nous ne recevons pas les accusés de réception des AOE envoyés ce matin. Les opérations restent en statut 'Envoyé'.",
+    "classe_attendue": "INCIDENT",
+    "note": "Non-réception ARE = non-transmission fichier métier → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T018",
+    "texte": "Le service d'authentification RSA token est indisponible. Impossible de se connecter avec le certificat.",
+    "classe_attendue": "INCIDENT",
+    "note": "Service authentification indisponible = dysfonctionnement technique → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T019",
+    "texte": "Les données de la journée boursière du 28/02/2026 n'ont pas été intégrées dans le système de reporting.",
+    "classe_attendue": "INCIDENT",
+    "note": "Données journée non intégrées = non-génération/incohérence données → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T020",
+    "texte": "Nous constatons que les soldes affichés sur TCS BaNCS ne correspondent pas aux mouvements réels du jour.",
+    "classe_attendue": "INCIDENT",
+    "note": "Soldes incohérents = erreur données système → INCIDENT (nouveau)"
+  },
+  {
+    "id": "T021",
+    "texte": "La facture du mois de février 2026 comporte un montant de TVA erroné. Le taux appliqué est de 20% alors que le barème prévoit 10%.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "TVA erronée sur facture = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T022",
+    "texte": "Nous contestons le montant des commissions de garde facturées pour le fonds ABC. Le calcul ne correspond pas au contrat.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Contestation commissions garde = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T023",
+    "texte": "La facture n° 888 du 15/01/2026 présente un écart de 1 250 DH sur le total des droits d'admission.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Écart montant facture = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T024",
+    "texte": "Nous avons constaté que la facture du T4 2025 inclut des opérations qui ne nous concernent pas. Nous demandons un rectificatif.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Opérations étrangères sur facture = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T025",
+    "texte": "Le montant du droit d'admission sur la facture de mars 2026 est doublé par rapport au mois précédent sans justification.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Montant doublé sans justification = contestation facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T026",
+    "texte": "Notre position disponible sur la valeur XYZ affiche 5 000 titres alors que nous en détenons 8 500. Il y a un écart de 3 500 titres.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Écart position titres = écart données comptables → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T027",
+    "texte": "Nous avons constaté un déséquilibre entre notre solde cash sur SRBM et la position affichée sur TCS BaNCS.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Déséquilibre solde cash inter-systèmes = écart données → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T028",
+    "texte": "Le détachement du coupon de la valeur DEF456 du 12/03/2026 n'a pas été correctement comptabilisé. Le montant du coupon est erroné.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Coupon détachement erroné = erreur données OST → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T029",
+    "texte": "Nous contestons le rejet de l'opération de rachat du 20/02/2026. Le cash était disponible et l'ISIN correctement saisi.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Contestation rejet opération = contestation traitement → RÉCLAMATION (variante few-shot, formulation différente)"
+  },
+  {
+    "id": "T030",
+    "texte": "Le solde de notre compte titre nominatif affiché sur le relevé mensuel ne correspond pas à nos registres internes.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Solde relevé vs registres internes = écart données comptables → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T031",
+    "texte": "Suite au retard de dénouement de 3 jours sur l'opération du 15/02, nous avons subi des pénalités de 2 500 DH auprès de notre contrepartie.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Préjudice financier concret suite retard dénouement → RÉCLAMATION (variante few-shot, avec montant concret)"
+  },
+  {
+    "id": "T032",
+    "texte": "Nous déplorons l'absence de réponse à nos 3 relances concernant l'erreur de facturation du mois de janvier.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Insatisfaction multiple relances sans réponse → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T033",
+    "texte": "Le délai de traitement de notre demande de codification a dépassé les 10 jours ouvrés prévus par la convention. C'est inadmissible.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Délai dépassé convention + insatisfaction → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T034",
+    "texte": "Nous avons été pénalisés par BAM pour non-respect des délais de reporting suite à un retard de transmission des données par Maroclear.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Préjudice réglementaire suite retard Maroclear → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T035",
+    "texte": "Nous contestons la facturation des droits de garde pour le mois de décembre 2025 car le calcul ne tient pas compte de nos exonérations conventionnées.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Contestation calcul exonérations = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T036",
+    "texte": "L'ICE figurant sur la facture n° 999 du fonds GHI est incorrecte. L'ICE attendue est 001234567000089.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "ICE incorrecte précisée = erreur facturation → RÉCLAMATION (variante few-shot, avec ICE précis)"
+  },
+  {
+    "id": "T037",
+    "texte": "Nous n'avons pas reçu les factures des mois de novembre et décembre 2025 pour nos deux mandants. Cela perturbe notre clôture comptable.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Factures multi-mois non reçues = manquement facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T038",
+    "texte": "Le montant de la commission de transaction sur la facture du T1 2026 est majoré de 15% par rapport au barème signé.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Commission majorée vs barème = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T039",
+    "texte": "Nous avons constaté que la facture du mois de janvier 2026 facture des opérations annulées le 28/12/2025.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Facturation opérations annulées = erreur facturation → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T040",
+    "texte": "Le relevé comptable du 31/12/2025 présente un écart de position sur la valeur JKL789. Notre back-office ne parvient pas à le rapprocher.",
+    "classe_attendue": "RÉCLAMATION",
+    "note": "Écart position relevé comptable = écart données comptables → RÉCLAMATION (nouveau)"
+  },
+  {
+    "id": "T041",
+    "texte": "Pourriez-vous nous communiquer l'état de nos positions titres au 15/03/2026 pour les ISIN suivants : FR0000123456 et MA0000789012 ?",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active d'information positions ('Pourriez-vous communiquer') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T042",
+    "texte": "Nous souhaitons obtenir un historique complet des mouvements sur le compte titre 12345 pour la période du 01/01/2025 au 31/12/2025.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active historique mouvements ('souhaitons obtenir') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T043",
+    "texte": "Veuillez nous faire parvenir l'attestation de garde pour le fonds ABC au 31/12/2025.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active attestation ('Veuillez faire parvenir') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T044",
+    "texte": "Nous avons besoin de l'extraction des données de la journée boursière du 20/02/2026 au format Excel.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active extraction données ('besoin de') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T045",
+    "texte": "Merci de nous envoyer le bilan émetteur de la valeur BOA arrêté au 31/12/2025.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active envoi bilan ('Merci de nous envoyer') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T046",
+    "texte": "Nous vous prions de bien vouloir nous transmettre les fichiers CFT des dates de négociation du 15/02 au 20/02/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active transmission CFT ('prions de bien vouloir transmettre') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T047",
+    "texte": "Pouvez-vous procéder à la retransmission des AOC manquants de la semaine du 01/03/2026 ?",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active retransmission AOC ('Pouvez-vous procéder') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T048",
+    "texte": "Merci de valider les opérations tardives de la journée du 18/03/2026 avant la clôture du batch.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active validation opérations tardives ('Merci de valider') → DEMANDE (variante few-shot, date différente)"
+  },
+  {
+    "id": "T049",
+    "texte": "Nous sollicitons l'activation du flux de données temps réel pour les opérations de marché à compter du 01/04/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active activation flux ('sollicitons l'activation') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T050",
+    "texte": "Veuillez procéder à la régularisation des suspens titres identifiés sur le contrat 98765 du 10/03/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active régularisation suspens ('Veuillez procéder') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T051",
+    "texte": "Suite à un changement de poste de travail, nous avons besoin d'un nouveau certificat RSA pour l'utilisateur Martin Dupont.",
+    "classe_attendue": "DEMANDE",
+    "note": "Nouveau certificat RSA changement poste = DEMANDE (variante few-shot, nom différent)"
+  },
+  {
+    "id": "T052",
+    "texte": "L'utilisateur Sophie Bernard a oublié son mot de passe TCS BaNCS. Merci de procéder à la réinitialisation.",
+    "classe_attendue": "DEMANDE",
+    "note": "Réinitialisation MDP oublié ('Merci de procéder') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T053",
+    "texte": "Nous avons perdu le token RSA suite à un incident matériel sur le poste de l'utilisateur Karim Alami. Merci de nous en générer un nouveau.",
+    "classe_attendue": "DEMANDE",
+    "note": "Token perdu incident matériel = DEMANDE (variante few-shot, nom/poste différent)"
+  },
+  {
+    "id": "T054",
+    "texte": "Prière de bien vouloir activer le profil de trading pour le nouvel utilisateur Laura Petit sur MyMaroclear.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active activation profil ('Prière de bien vouloir activer') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T055",
+    "texte": "Suite à la réinstallation du poste de l'utilisateur Ahmed Benani, nous avons besoin du mot de passe d'installation du token RSA.",
+    "classe_attendue": "DEMANDE",
+    "note": "MDP installation token RSA poste réinstallé = DEMANDE (variante few-shot, nom différent)"
+  },
+  {
+    "id": "T056",
+    "texte": "Nous vous prions de bien vouloir nous communiquer le registre des nominatifs inscrits auprès de nos émetteurs au 31/12/2025.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active registre nominatifs ('prions de bien vouloir communiquer') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T057",
+    "texte": "Merci de mettre à notre disposition les AOE des contrats 11111, 22222 et 33333 du 05/03/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active mise à disposition AOE spécifiques ('Merci de mettre à disposition') → DEMANDE (variante few-shot, refs différentes)"
+  },
+  {
+    "id": "T058",
+    "texte": "Nous sollicitons la prolongation des horaires de session de trading jusqu'à 16h30 pour la journée du 31/12/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active prolongation horaires ('sollicitons la prolongation') → DEMANDE (variante few-shot, date/horaire différents)"
+  },
+  {
+    "id": "T059",
+    "texte": "Veuillez nous faire parvenir la lettre comptable justificative du dénouement de l'opération 44444 du 12/03/2026.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active lettre comptable ('Veuillez faire parvenir') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T060",
+    "texte": "Nous avons besoin de la mise à jour de l'adresse IP autorisée pour notre connexion VPN. Nouvelle IP : 192.168.1.100.",
+    "classe_attendue": "DEMANDE",
+    "note": "Demande active mise à jour IP VPN ('besoin de') → DEMANDE (nouveau)"
+  },
+  {
+    "id": "T061",
+    "texte": "Nous avons un bug sur le système ce matin.",
+    "classe_attendue": "AMBIGU",
+    "note": "Message vague ('bug' + 'système' sans précision nature/impact) → AMBIGU, nécessite Q1_collectif"
+  },
+  {
+    "id": "T062",
+    "texte": "Ça ne fonctionne pas correctement depuis hier.",
+    "classe_attendue": "AMBIGU",
+    "note": "Message vague (< 5 mots significatifs + 'ne fonctionne pas') → AMBIGU, impossible de déterminer nature"
+  },
+  {
+    "id": "T063",
+    "texte": "Nous avons un problème avec le fichier du mois dernier.",
+    "classe_attendue": "AMBIGU",
+    "note": "Fichier mentionné sans précision type (métier vs non-métier) ni nature exacte → AMBIGU, nécessite Q2_contenu_type"
+  },
+  {
+    "id": "T064",
+    "texte": "Le document reçu n'est pas correct.",
+    "classe_attendue": "AMBIGU",
+    "note": "Document non correct sans précision : erreur technique (INCIDENT) ou erreur facturation (RÉCLAMATION) ? → AMBIGU"
+  },
+  {
+    "id": "T065",
+    "texte": "Urgent ! Nous avons un dysfonctionnement à signaler.",
+    "classe_attendue": "AMBIGU",
+    "note": "Mot fort 'urgent' + 'dysfonctionnement' sans description réelle du problème → AMBIGU, nécessite clarification Q1"
+  }
+]

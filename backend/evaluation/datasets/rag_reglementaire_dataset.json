@@ -1,0 +1,182 @@
+[
+  {
+    "id": "RR001",
+    "question": "Quelle est la distinction légale entre un 'affilié' et un 'teneur de compte' selon la Loi n° 35-96 ?",
+    "reponse_reference": "Selon l'Article 1 de la Loi n° 35-96, l'affilié est tout établissement disposant d'un compte courant de titres auprès du Dépositaire central. Le 'teneur de compte' désigne spécifiquement les intermédiaires financiers ayant obtenu l'habilitation obligatoire prévue à l'Article 24, ainsi que les personnes morales émettrices. La distinction repose sur la détention d'un compte direct chez le Dépositaire central pour l'affilié, contre l'habilitation technique pour la gestion des comptes titres des tiers pour le teneur de compte.",
+    "mots_cles_attendus": ["affilié", "teneur de compte", "Article 1", "Article 24", "habilitation", "intermédiaire financier"],
+    "categorie": "definition",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 1"
+  },
+  {
+    "id": "RR002",
+    "question": "Quelles sont les missions principales exercées par le Dépositaire Central à titre principal ?",
+    "reponse_reference": "Conformément à l'Article 3 de la Loi n° 35-96, le Dépositaire central réalise tous actes de conservation adaptés à la nature des titres et administre les comptes courants de valeurs mobilières de ses affiliés. Il opère les virements entre comptes courants, facilite l'exercice des droits attachés aux titres et contrôle la tenue de la comptabilité titres des teneurs de comptes. Il assure également la codification des valeurs admises à ses opérations.",
+    "mots_cles_attendus": ["conservation", "administration", "article 3", "virements", "comptabilité titres", "codification"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 3"
+  },
+  {
+    "id": "RR003",
+    "question": "Quelles sont les personnes liées au Dépositaire Central soumises au secret professionnel et à qui ce secret n'est-il pas opposable ?",
+    "reponse_reference": "Selon l'Article 5 de la Loi n° 35-96, les membres du conseil d'administration, dirigeants et employés du Dépositaire central sont tenus au secret professionnel sous peine des sanctions de l'article 446 du code pénal. Ce secret n'est pas opposable à l'autorité judiciaire en procédure pénale, ni à l'AMMC agissant dans le cadre de ses missions de contrôle. Ils ne peuvent divulguer d'informations sur les soldes ou mouvements de titres sans accord exprès des affiliés.",
+    "mots_cles_attendus": ["secret professionnel", "article 5", "article 446", "AMMC", "autorité judiciaire", "opposabilité"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 5"
+  },
+  {
+    "id": "RR004",
+    "question": "Quelle amende encourent les membres des organes d'administration d'une personne morale émettrice s'ils n'avisent pas les titulaires de titres nominatifs des modalités d'inscription en compte ?",
+    "reponse_reference": "Selon l'Article 71 de la Loi n° 35-96, les membres des organes d'administration, de direction ou de gestion des personnes morales émettrices sont punis d'une amende allant de 10.000 à 50.000 dirhams dans ce cas. Cette sanction s'applique en cas de non-respect des délais de notification prescrits aux articles 43 ou 62 de ladite loi. Le non-respect des modalités de vente des droits ou de consignation des produits à la CDG est passible de la même amende.",
+    "mots_cles_attendus": ["amende", "10 000", "article 71", "titres nominatifs", "inscription en compte"],
+    "categorie": "sanctions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 71"
+  },
+  {
+    "id": "RR005",
+    "question": "Quelles sont les sanctions prévues pour un intermédiaire financier qui tient des comptes titres sans avoir été préalablement habilité ?",
+    "reponse_reference": "L'Article 73 de la Loi n° 35-96 prévoit une amende allant de 50.000 à 500.000 dirhams pour les membres des organes d'administration ou de gestion des intermédiaires financiers tenant des comptes sans habilitation. Cette habilitation doit être accordée par arrêté du ministre chargé des finances après avis du Dépositaire central conformément à l'Article 24. La même peine s'applique en cas de non-respect de l'obligation d'ouvrir des comptes courants distincts par valeur.",
+    "mots_cles_attendus": ["amende", "50 000", "article 73", "article 24", "habilitation", "intermédiaire financier"],
+    "categorie": "sanctions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 73"
+  },
+  {
+    "id": "RR006",
+    "question": "Que doit obligatoirement préciser le règlement général du Dépositaire Central concernant les relations avec ses affiliés ?",
+    "reponse_reference": "En vertu de l'Article 8 de la Loi n° 35-96, le règlement général doit préciser les modalités d'admission et d'affiliation, de dépôt et de conservation des titres, ainsi que les modalités de circulation via les comptes courants. Il définit également les règles relatives aux opérations sur titres décidées par les émetteurs et les modalités de tarification des services. Enfin, il précise le contenu du dossier d'habilitation et le plan comptable des organismes teneurs de comptes.",
+    "mots_cles_attendus": ["règlement général", "article 8", "affiliation", "circulation", "tarification", "conservation"],
+    "categorie": "conditions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 8"
+  },
+  {
+    "id": "RR007",
+    "question": "Quelles entités peuvent légalement prétendre à la qualité d'affilié auprès du Dépositaire Central ?",
+    "reponse_reference": "Selon l'Article 10 de la Loi n° 35-96, la qualité d'affilié est strictement réservée à trois catégories d'entités : les intermédiaires financiers habilités, les personnes morales émettrices de valeurs admises aux opérations du dépositaire, et les organismes étrangers ayant un objet similaire. L'admission aux opérations s'effectue selon les modalités prévues par le règlement général.",
+    "mots_cles_attendus": ["article 10", "intermédiaires financiers", "émetteurs", "organismes étrangers", "affiliés"],
+    "categorie": "conditions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 10"
+  },
+  {
+    "id": "RR008",
+    "question": "Comment est fixée la commission annuelle que le Dépositaire Central doit verser au profit de l'AMMC ?",
+    "reponse_reference": "D'après l'Article 8-6 de la Loi n° 35-96, cette commission est calculée sur la base du montant des valeurs admises aux opérations du Dépositaire central. Son taux, ses modalités de calcul et de versement sont fixés par arrêté du ministre chargé des finances. Le taux est légalement plafonné à un pour cent mille du montant des valeurs admises.",
+    "mots_cles_attendus": ["commission annuelle", "article 8-6", "un pour cent mille", "arrêté", "montant des valeurs"],
+    "categorie": "conditions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 8-6"
+  },
+  {
+    "id": "RR009",
+    "question": "Quel est le rôle du Dépositaire Central dans la vérification des équilibres comptables des teneurs de comptes ?",
+    "reponse_reference": "L'Article 39 de la Loi n° 35-96 charge le Dépositaire central d'assurer la vérification des équilibres comptables entre l'émission globale et les avoirs des affiliés. À cette fin, il est habilité à effectuer des contrôles sur place et sur pièces auprès de ses affiliés teneurs de comptes via des agents commissionnés. En cas d'irrégularité non rectifiée, il peut requérir que l'affilié confie un mandat de gestion de ses comptes à un tiers.",
+    "mots_cles_attendus": ["équilibres comptables", "article 39", "contrôles sur place", "comptabilité titres", "vérification"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 39"
+  },
+  {
+    "id": "RR010",
+    "question": "Quelles valeurs mobilières sont obligatoirement matérialisées par une inscription en compte selon le régime général ?",
+    "reponse_reference": "Selon l'Article 19 de la Loi n° 35-96, l'inscription en compte est obligatoire pour les valeurs cotées en Bourse, les titres du Trésor par appel à la concurrence, les actions de SICAV, les parts d'OPCVM, de FPCT et d'OPCR. Elle s'applique également aux titres de créances négociables ainsi qu'à toute autre valeur émise par voie d'appel public à l'épargne. Ces titres sont inscrits soit chez l'émetteur (nominatif), soit chez un intermédiaire habilité (porteur).",
+    "mots_cles_attendus": ["article 19", "Bourse", "Trésor", "OPCVM", "FPCT", "TCN", "appel public"],
+    "categorie": "conditions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 19"
+  },
+  {
+    "id": "RR011",
+    "question": "Quel est le rôle de l'AMMC concernant les demandes de visa lors des opérations d'Appel Public à l'Épargne ?",
+    "reponse_reference": "Conformément à l'Article 22 de la Loi n° 43-12, l'AMMC perçoit une commission lors des demandes de visa ou de dispense du régime d'appel public à l'épargne. Elle s'assure que l'information fournie au public est établie selon les lois en vigueur pour protéger l'épargne. Le visa atteste que l'émetteur a respecté les obligations de transparence et d'intégrité requises pour l'opération.",
+    "mots_cles_attendus": ["article 22", "visa", "appel public à l'épargne", "commission", "transparence"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 22"
+  },
+  {
+    "id": "RR012",
+    "question": "Quelle est la pénalité prévue en cas de retard de diffusion d'information au public ou de transmission de documents à l'AMMC ?",
+    "reponse_reference": "Selon l'Article 10 de la Loi n° 43-12, le Président de l'AMMC prononce une pénalité de retard sur avis conforme du collège des sanctions. Le montant de cette pénalité est fixé par le règlement général de l'AMMC. Elle est plafonnée à cinq mille (5.000) dirhams par jour de retard calendaire.",
+    "mots_cles_attendus": ["pénalité de retard", "article 10", "5 000", "diffusion d'information", "collège des sanctions"],
+    "categorie": "sanctions",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 10"
+  },
+  {
+    "id": "RR013",
+    "question": "Quelles sont les obligations d'information incombant aux dirigeants des organismes sous contrôle de l'AMMC en cas d'anomalie grave ?",
+    "reponse_reference": "D'après l'Article 26 de la Loi n° 43-12, les dirigeants doivent informer immédiatement les membres de leur conseil d'administration ainsi que le président de l'AMMC de toute anomalie grave. Cette obligation concerne les faits susceptibles de compromettre la situation de l'établissement. Elle vise également tout événement pouvant porter atteinte au renom de la profession financière.",
+    "mots_cles_attendus": ["anomalie", "article 26", "événement grave", "renom de la profession", "président de l'AMMC"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 26"
+  },
+  {
+    "id": "RR014",
+    "question": "Dans quels cas le Président de l'AMMC peut-il prononcer le retrait d'agrément d'une société de bourse ?",
+    "reponse_reference": "Selon l'Article 9 de la Loi n° 43-12, le retrait d'agrément est prononcé en cas de faits de nature à fausser le fonctionnement du marché ou à porter atteinte à l'égalité de traitement des épargnants. Cette sanction disciplinaire lourde nécessite l'avis conforme du collège des sanctions. Elle peut également être prononcée si l'intermédiaire tire un avantage indu d'agissements contraires à ses obligations professionnelles.",
+    "mots_cles_attendus": ["retrait d'agrément", "article 9", "société de bourse", "fonctionnement du marché", "collège des sanctions"],
+    "categorie": "sanctions",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 9"
+  },
+  {
+    "id": "RR015",
+    "question": "Quelle amende encourt un intermédiaire financier habilité qui ne respecte pas son engagement d'ouvrir des comptes titres à quiconque en fait la demande ?",
+    "reponse_reference": "L'Article 73 de la Loi n° 35-96 punit cette infraction d'une amende allant de 50.000 à 500.000 dirhams. L'ouverture de compte à toute personne en faisant la demande est un engagement explicite lié à l'octroi de l'habilitation conformément à l'Article 25. Cette obligation garantit l'accès universel au régime de l'inscription en compte pour les investisseurs.",
+    "mots_cles_attendus": ["amende", "article 73", "article 25", "50 000", "ouverture de compte"],
+    "categorie": "sanctions",
+    "source_document": "Loi n° 35-96",
+    "article_reference": "Article 73"
+  },
+  {
+    "id": "RR016",
+    "question": "Quelles sont les matières spécifiques que peuvent fixer les circulaires édictées par l'AMMC ?",
+    "reponse_reference": "Selon l'Article 6 de la Loi n° 43-12, les circulaires fixent les règles de pratique professionnelle applicables aux organismes contrôlés et à leur personnel. Elles établissent les règles déontologiques pour prévenir les conflits d'intérêt et garantissent l'équité et l'intégrité du marché. Enfin, elles précisent les modalités techniques ou pratiques d'application des lois et règlements financiers.",
+    "mots_cles_attendus": ["article 6", "pratique professionnelle", "déontologie", "conflits d'intérêts", "équité"],
+    "categorie": "croisement",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 6"
+  },
+  {
+    "id": "RR017",
+    "question": "Quelle est la responsabilité de l'AMMC vis-à-vis des organismes sous son contrôle en matière de lutte contre le blanchiment de capitaux ?",
+    "reponse_reference": "L'Article 3 de la Loi n° 43-12 stipule que l'AMMC s'assure du respect de la législation et de la réglementation relatives à la lutte contre le blanchiment de capitaux. Elle veille à ce que les organismes sous son contrôle appliquent les dispositifs de vigilance requis. Cette mission s'inscrit dans son rôle global de surveillance du bon fonctionnement et de l'intégrité du marché des capitaux.",
+    "mots_cles_attendus": ["blanchiment de capitaux", "article 3", "contrôle", "vigilance", "intégrité du marché"],
+    "categorie": "obligations",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 3"
+  },
+  {
+    "id": "RR018",
+    "question": "Sur quel référentiel les règles de pratique professionnelle et déontologiques des circulaires de l'AMMC doivent-elles être déterminées ?",
+    "reponse_reference": "En vertu de l'Article 6 de la Loi n° 43-12, ces règles sont déterminées sur la base d'un référentiel de normes internationales. L'élaboration des circulaires nécessite obligatoirement la consultation préalable des professionnels concernés. Elles doivent respecter la hiérarchie des normes et ne peuvent donc pas modifier ou abroger les dispositions législatives existantes.",
+    "mots_cles_attendus": ["article 6", "normes internationales", "consultation", "référentiel", "hiérarchie des normes"],
+    "categorie": "croisement",
+    "source_document": "Loi n° 43-12",
+    "article_reference": "Article 6"
+  },
+  {
+    "id": "RR019",
+    "question": "Quelle est la date de promulgation du Dahir portant création du Dépositaire Central et qui en a assuré le contreseing ?",
+    "reponse_reference": "Le Dahir n° 1-96-246, portant promulgation de la Loi 35-96 relative au Dépositaire Central, a été fait à Rabat le 9 janvier 1997 (soit le 29 chaabane 1417). Le contreseing de cet acte historique a été assuré par le Premier ministre de l'époque, Abdellatif Filali. Ce texte fonde le régime général de l'inscription en compte au Maroc.",
+    "mots_cles_attendus": ["9 janvier 1997", "Abdellatif Filali", "29 chaabane 1417", "contreseing", "dahir"],
+    "categorie": "definition",
+    "source_document": "actualite_historique",
+    "article_reference": "Préambule du Dahir"
+  },
+  {
+    "id": "RR020",
+    "question": "Sur quel article de la Constitution se base le Dahir n° 1-96-246 du 9 janvier 1997 pour la promulgation de la Loi 35-96 ?",
+    "reponse_reference": "Le Dahir de promulgation n° 1-96-246 vise expressément la Constitution, et plus particulièrement son Article 26, comme fondement juridique de la décision royale. Ce visa constitutionnel permet la publication de la Loi n° 35-96 au Bulletin officiel après son adoption par la Chambre des représentants le 12 décembre 1996. L'Article 26 constitue ainsi le visa constitutionnel de l'acte de promulgation.",
+    "mots_cles_attendus": ["Article 26", "Constitution", "promulgation", "Visa", "Chambre des représentants"],
+    "categorie": "definition",
+    "source_document": "actualite_historique",
+    "article_reference": "Visa du Dahir"
+  }
+]

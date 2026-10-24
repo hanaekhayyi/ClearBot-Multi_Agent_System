@@ -1,0 +1,27 @@
+agent_name: "RAGAgent"
+description: "Répond aux questions institutionnelles et procédurales sur Maroclear"
+
+llm:
+  inherit: true          # hérite de backend/config/config.yaml
+
+rag:
+  chunk_size: 600
+  chunk_overlap: 80
+  top_k: 8
+  similarity_threshold: 0.4
+
+vector_store:
+  provider: "chromadb"
+  persist_directory: "data/vectordb"
+  collection_name: "maroclear_knowledge"
+  distance_metric: "cosine"
+
+documents:
+  sources_dir: "data/documents"
+  supported_formats: [".pdf", ".xlsx"]
+
+embeddings:
+  provider: "ollama"
+  model: "bge-m3"
+  base_url: "http://localhost:11434"
+  batch_size: 32

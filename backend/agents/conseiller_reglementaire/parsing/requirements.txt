@@ -1,0 +1,8 @@
+# Requirements pour le pipeline de parsing AMMC (en cours)
+# A installer separement quand le parsing sera finalise :
+# pip install -r parsing/requirements.txt
+
+docling==2.5.0
+pillow>=10.3.0
+pydantic>=2.6.0
+requests>=2.32.3

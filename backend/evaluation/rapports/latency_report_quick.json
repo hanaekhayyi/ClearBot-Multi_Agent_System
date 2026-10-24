@@ -1,0 +1,102 @@
+{
+  "generated_at": "2026-06-11T15:31:14",
+  "base_url": "http://127.0.0.1:8000",
+  "runs_per_route": 2,
+  "warmup_per_route": 1,
+  "environment": {
+    "python": "3.11.9",
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel"
+  },
+  "results": [
+    {
+      "route": "GET /chat-session",
+      "runs": 2,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 2.36,
+      "median_ms": 2.36,
+      "p95_ms": 2.45,
+      "min_ms": 2.28,
+      "max_ms": 2.45,
+      "errors": []
+    },
+    {
+      "route": "POST /chat public - identité",
+      "runs": 2,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 6.01,
+      "median_ms": 6.01,
+      "p95_ms": 6.27,
+      "min_ms": 5.74,
+      "max_ms": 6.27,
+      "errors": []
+    },
+    {
+      "route": "POST /chat private - classification",
+      "runs": 2,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 14846.49,
+      "median_ms": 14846.49,
+      "p95_ms": 15396.77,
+      "min_ms": 14296.21,
+      "max_ms": 15396.77,
+      "errors": []
+    },
+    {
+      "route": "POST /chat-informationnel",
+      "runs": 2,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 7847.98,
+      "median_ms": 7847.98,
+      "p95_ms": 8496.9,
+      "min_ms": 7199.06,
+      "max_ms": 8496.9,
+      "errors": []
+    },
+    {
+      "route": "POST /chat-reglementaire",
+      "runs": 2,
+      "status_codes": [
+        0
+      ],
+      "success_rate": 0.0,
+      "mean_ms": 180015.04,
+      "median_ms": 180015.04,
+      "p95_ms": 180015.96,
+      "min_ms": 180014.13,
+      "max_ms": 180015.96,
+      "errors": [
+        "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=8000): Read timed out. (read timeout=180)",
+        "ReadTimeout: HTTPConnectionPool(host='127.0.0.1', port=8000): Read timed out. (read timeout=180)"
+      ]
+    },
+    {
+      "route": "POST /feedback",
+      "runs": 2,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 35.91,
+      "median_ms": 35.91,
+      "p95_ms": 36.08,
+      "min_ms": 35.75,
+      "max_ms": 36.08,
+      "errors": []
+    }
+  ]
+}

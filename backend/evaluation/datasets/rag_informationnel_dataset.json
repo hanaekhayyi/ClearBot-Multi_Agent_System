@@ -1,0 +1,226 @@
+[
+  {
+    "id": "RI001",
+    "question": "Quel est le rôle fondamental de Maroclear au sein de l'infrastructure du marché financier marocain ?",
+    "reponse_reference": "Maroclear occupe une position centrale en assurant la sécurité et l'efficacité du marché à travers ses services de règlement, de conservation et de gestion des titres. En tant que dépositaire central et partenaire de confiance, il s'inspire des meilleures pratiques internationales pour garantir l'intégrité des flux financiers.",
+    "mots_cles_attendus": ["dépositaire central", "règlement", "conservation", "gestion des titres", "intégrité"],
+    "categorie": "role",
+    "source": "À Propos de Maroclear (PDF institutionnel)"
+  },
+  {
+    "id": "RI002",
+    "question": "Qu'est-ce que le règlement contre livraison chez Maroclear ?",
+    "reponse_reference": "Le règlement contre livraison est le principe du dénouement des opérations à Maroclear qui veut que le règlement espèces intervienne concomitamment à la livraison de titres.",
+    "mots_cles_attendus": ["règlement contre livraison", "dénouement", "concomitamment", "espèces", "livraison"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI003",
+    "question": "Quel est le cadre réglementaire régissant l'inscription en compte des valeurs ?",
+    "reponse_reference": "Le régime général de l'inscription en compte repose sur l'enregistrement effectif des titres dématérialisés au nom de leur propriétaire auprès de l'émetteur ou de l'intermédiaire financier. Ce régime est formellement approuvé par arrêté du Ministre chargé des finances.",
+    "mots_cles_attendus": ["dématérialisés", "arrêté", "Ministre chargé des finances", "inscription en compte", "émetteur"],
+    "categorie": "reglementation",
+    "source": "Règles de fonctionnement de Maroclear (V2.2, 2019)"
+  },
+  {
+    "id": "RI004",
+    "question": "Comment fonctionne l'appariement des instructions chez Maroclear ?",
+    "reponse_reference": "Le Dépositaire Central reconstitue les paires des instructions qui vont ensemble. Les deux instructions sont appariées si l'une est une réception et l'autre une livraison, selon des critères qui doivent être identiques : titre, quantité, montant, date de négociation, date de dénouement.",
+    "mots_cles_attendus": ["appariement", "instructions", "réception", "livraison", "critères", "dénouement"],
+    "categorie": "procedure",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI005",
+    "question": "Quelles responsabilités incombent à Maroclear au titre de l'Agence Marocaine de Codification (AMC) ?",
+    "reponse_reference": "En sa qualité d'AMC, Maroclear attribue des codes aux valeurs admises à ses opérations qui sont obligatoirement utilisés par les affiliés. Maroclear utilise la codification ISIN conformément aux standards internationaux, dans le cadre des activités de l'ANNA.",
+    "mots_cles_attendus": ["AMC", "codes", "affiliés", "ISIN", "standards internationaux", "ANNA"],
+    "categorie": "role",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI006",
+    "question": "Quelle est la fonction précise du code ISIN dans le système de Maroclear ?",
+    "reponse_reference": "Le code ISIN est un code attribué par Maroclear à chaque instrument financier (action, obligation, OPCVM…) pour l'identifier. Ces codes sont obligatoirement utilisés par les affiliés.",
+    "mots_cles_attendus": ["ISIN", "instrument financier", "identifier", "affiliés", "obligatoirement"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI007",
+    "question": "Quels sont les services spécifiques fournis par Maroclear lors des Opérations sur Titres (OST) ?",
+    "reponse_reference": "Une OST est une opération prise par l'initiative d'une entreprise cotée ou non cotée en bourse qui affecte les titres qu'elle a émis. Maroclear assure la gestion des événements affectant la vie des valeurs mobilières comme les dividendes, fusions ou remboursements, appliqués directement sur les comptes titres des affiliés.",
+    "mots_cles_attendus": ["OST", "opération sur titre", "entreprise", "dividendes", "comptes titres", "affiliés"],
+    "categorie": "services",
+    "source": "Glossaire Maroclear + Règles de fonctionnement de Maroclear (V2.2, 2019)"
+  },
+  {
+    "id": "RI008",
+    "question": "Quelle distinction existe-t-il entre un affilié de plein exercice et un affilié sous mandat ?",
+    "reponse_reference": "L'affilié de plein exercice désigne les intermédiaires financiers habilités (banques et sociétés de bourse) qui gèrent directement leurs opérations. L'affilié sous mandat donne mandat à un autre affilié pour gérer ses comptes courants en ses lieu et place. Toute désignation de mandataire doit être préalablement approuvée par le Dépositaire Central.",
+    "mots_cles_attendus": ["affilié de plein exercice", "affilié sous mandat", "mandataire", "comptes courants", "intermédiaire financier habilité", "approuvée"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI009",
+    "question": "Quelle est l'utilité opérationnelle du Bordereau de Référence Nominative (BRN) ?",
+    "reponse_reference": "Le BRN est un bordereau émis dans le cadre d'un achat ou d'une vente de titres au nominatif. L'objectif est de connaître en permanence l'identité des détenteurs d'actions au nominatif.",
+    "mots_cles_attendus": ["BRN", "nominatif", "achat", "vente", "détenteurs", "identité"],
+    "categorie": "procedure",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI010",
+    "question": "Comment fonctionnent les Positions Nettes Acheteuses (PONA) dans le dénouement des flux ?",
+    "reponse_reference": "Les PONA sont constituées par des virements de fonds sur des comptes spécifiques tenus par Bank Al-Maghrib, exclusivement dédiées au dénouement des opérations traitées via Maroclear. Bank Al-Maghrib les communique à Maroclear qui vérifie si les émetteurs ont suffisamment de provisions espèces pour dénouer les opérations.",
+    "mots_cles_attendus": ["PONA", "virements de fonds", "Bank Al-Maghrib", "dénouement", "provisions espèces"],
+    "categorie": "procedure",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI011",
+    "question": "Quel est le texte législatif fondateur du Dépositaire Central au Maroc ?",
+    "reponse_reference": "Le Dépositaire Central a été institué par la Loi n° 35-96, promulguée par le Dahir n° 1-96-246 du 29 chaabane 1417, relative à la création d'un Dépositaire Central et à l'institution d'un régime général de l'inscription en compte de certaines valeurs.",
+    "mots_cles_attendus": ["Loi n° 35-96", "Dahir", "Dépositaire Central", "inscription en compte"],
+    "categorie": "reglementation",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI012",
+    "question": "Que contient le Règlement Général de Maroclear et à qui s'impose-t-il ?",
+    "reponse_reference": "Le Règlement Général de Maroclear est un recueil des dispositions légales relatives aux principes de fonctionnement de Maroclear et les obligations de ses affiliés, à l'inscription en compte, aux conditions d'exercice de la fonction de teneur de compte ainsi que certaines dispositions financières.",
+    "mots_cles_attendus": ["Règlement Général", "dispositions légales", "fonctionnement", "obligations", "affiliés", "teneur de compte"],
+    "categorie": "reglementation",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI013",
+    "question": "Quelle est l'approche de Maroclear concernant la sécurité des informations via le SMSI ?",
+    "reponse_reference": "Le SMSI appartient à la famille des normes ISO 27000. Il désigne l'approche systémique par laquelle Maroclear veille à la sécurité des informations sensibles. Construit selon un processus de management du risque, un SMSI englobe les personnes, les processus et les systèmes de SI.",
+    "mots_cles_attendus": ["SMSI", "ISO 27000", "management du risque", "informations sensibles", "sécurité"],
+    "categorie": "procedure",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI014",
+    "question": "Quel rôle joue le Système des Règlements Bruts du Maroc (SRBM) dans l'écosystème financier ?",
+    "reponse_reference": "Le SRBM est une infrastructure de paiement qui permet des transferts sécurisés et efficients entre les institutions financières participantes et contribue à faciliter l'exécution de la politique monétaire grâce à une surveillance permanente des flux et de la liquidité par Bank Al-Maghrib.",
+    "mots_cles_attendus": ["SRBM", "infrastructure de paiement", "transferts", "Bank Al-Maghrib", "liquidité", "politique monétaire"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI015",
+    "question": "Qu'est-ce que TCS BaNCS dans le contexte de Maroclear ?",
+    "reponse_reference": "TCS BaNCS Market Infrastructure est la plateforme électronique par laquelle passe obligatoirement le dénouement des opérations chez Maroclear.",
+    "mots_cles_attendus": ["TCS BaNCS", "plateforme électronique", "dénouement", "obligatoirement"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI016",
+    "question": "Quelle est la finalité du compte émission géré par Maroclear ?",
+    "reponse_reference": "Maroclear centralise la conservation de l'intégrité des titres qui lui sont confiés. Un plan comptable titres définissant les règles de conservation et de circulation des valeurs mobilières s'impose tant à Maroclear qu'à ses affiliés, de façon à conférer à la conservation scripturale un maximum d'étanchéité et de sécurité.",
+    "mots_cles_attendus": ["compte émission", "plan comptable titres", "conservation", "circulation", "étanchéité", "sécurité"],
+    "categorie": "procedure",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI017",
+    "question": "Comment est défini le dénouement dans le cycle post-négociation ?",
+    "reponse_reference": "Le dénouement représente la phase finale de gestion administrative des opérations traitées sur les marchés financiers. Il comprend la confirmation des ordres de bourse, le règlement effectif des flux espèces et la livraison simultanée des titres, transformant l'engagement contractuel en un transfert de propriété définitif.",
+    "mots_cles_attendus": ["dénouement", "post-négociation", "règlement", "livraison", "transfert de propriété"],
+    "categorie": "procedure",
+    "source": "Règles de fonctionnement de Maroclear (V2.2, 2019)"
+  },
+  {
+    "id": "RI018",
+    "question": "Quel est le rôle d'un centralisateur auprès de Maroclear ?",
+    "reponse_reference": "Le centralisateur est généralement une banque ou société de bourse de l'émetteur, conduit à gérer chez Maroclear, en qualité de domicile, dans des comptes spécifiques ouverts à son nom les titres et les opérations y afférent, pour le compte de sa clientèle à laquelle il est lié par un mandat de gestion.",
+    "mots_cles_attendus": ["centralisateur", "banque", "société de bourse", "domicile", "comptes spécifiques", "mandat de gestion"],
+    "categorie": "role",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI019",
+    "question": "Quelle est la distinction fondamentale entre le marché primaire et le marché secondaire ?",
+    "reponse_reference": "Le marché primaire est celui sur lequel les nouveaux titres financiers sont émis et souscrits par des investisseurs. Le marché secondaire est celui sur lequel sont échangés des titres déjà créés entre investisseurs. En assurant la liquidité des investissements financiers, le marché secondaire assure la qualité du marché primaire.",
+    "mots_cles_attendus": ["marché primaire", "marché secondaire", "émis", "souscrits", "liquidité", "investisseurs"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI020",
+    "question": "Que signifie le principe des avoirs indifférenciés dans la comptabilité-titres ?",
+    "reponse_reference": "Les avoirs indifférenciés désignent toute instruction sur les avoirs ne comportant pas d'indication quant à la catégorie d'avoirs à créditer ou à débiter.",
+    "mots_cles_attendus": ["avoirs indifférenciés", "instruction", "catégorie d'avoirs", "créditer", "débiter"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI021",
+    "question": "Qu'est-ce que la ségrégation des avoirs chez Maroclear ?",
+    "reponse_reference": "Pour chaque valeur, les intermédiaires financiers habilités doivent obligatoirement ouvrir des comptes courants distincts pour leurs avoirs propres et les avoirs de leur clientèle.",
+    "mots_cles_attendus": ["ségrégation des avoirs", "intermédiaires financiers habilités", "comptes courants distincts", "avoirs propres", "clientèle"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI022",
+    "question": "Quelles conditions définissent légalement un Appel Public à l'Épargne ?",
+    "reponse_reference": "Il y a appel public à l'épargne en cas de négociation d'un titre sur le marché boursier ou tout autre marché réglementé, ou en cas d'émission ou de cession de titres auprès du grand public en ayant recours à la souscription, à la vente ou à l'échange.",
+    "mots_cles_attendus": ["appel public à l'épargne", "marché boursier", "marché réglementé", "émission", "souscription", "grand public"],
+    "categorie": "reglementation",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI023",
+    "question": "Qu'est-ce qu'un acompte sur dividende ?",
+    "reponse_reference": "Un acompte sur dividende est une somme versée aux actionnaires représentant une part du dividende à venir. L'acompte sur dividende est fréquent dans le cas de dividende important.",
+    "mots_cles_attendus": ["acompte sur dividende", "actionnaires", "dividende", "versée"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI024",
+    "question": "Quelle est la différence entre la gestion au nominatif pur et la gestion au nominatif administré ?",
+    "reponse_reference": "Dans la gestion au nominatif pur, les inscriptions en compte sont réalisées exclusivement chez l'émetteur qui se charge lui-même de la gestion de ses titres. Dans la gestion au nominatif administré, les inscriptions en compte sont réalisées chez l'intermédiaire financier qui se charge de la gestion des titres au nom de ses clients.",
+    "mots_cles_attendus": ["nominatif pur", "nominatif administré", "émetteur", "intermédiaire financier", "inscriptions en compte"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI025",
+    "question": "Qu'est-ce que le transfert franco chez Maroclear ?",
+    "reponse_reference": "Le transfert franco est le transfert de titres d'un compte à l'autre sans mouvement d'espèces.",
+    "mots_cles_attendus": ["transfert franco", "titres", "compte", "sans mouvement d'espèces"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI026",
+    "question": "Qu'est-ce qu'un teneur de compte chez Maroclear ?",
+    "reponse_reference": "Le teneur de compte est le possesseur de compte courant chez Maroclear étant habilité à la tenue des comptes de sa clientèle auprès de Maroclear. Il s'agit des banques et des sociétés de bourse.",
+    "mots_cles_attendus": ["teneur de compte", "compte courant", "habilité", "clientèle", "banques", "sociétés de bourse"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI027",
+    "question": "Qu'est-ce qu'une valeur mobilière selon Maroclear ?",
+    "reponse_reference": "Une valeur mobilière est un titre financier qui peut être soit un titre de propriété, soit un titre de créance, qui confère des droits standardisés et peut être échangé en bourse. Sont assimilées à des valeurs mobilières les titres de créance négociables, les parts de fonds commun de placement, les parts de FPCT et les actions et parts d'organismes de placement en capital risque.",
+    "mots_cles_attendus": ["valeur mobilière", "titre de propriété", "titre de créance", "droits standardisés", "bourse"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  },
+  {
+    "id": "RI028",
+    "question": "Qu'est-ce qu'un instrument financier selon le glossaire Maroclear ?",
+    "reponse_reference": "Les instruments financiers sont des titres ou contrats, dont certains sont négociables notamment sur des bourses, certains exclusivement utilisés pour anticiper une rentabilité ou un risque financier ou monétaire.",
+    "mots_cles_attendus": ["instrument financier", "titres", "contrats", "négociables", "bourses", "rentabilité"],
+    "categorie": "definition",
+    "source": "Glossaire Maroclear"
+  }
+]

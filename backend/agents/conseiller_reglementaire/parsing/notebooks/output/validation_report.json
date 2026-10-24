@@ -1,0 +1,68 @@
+{
+  "total_chunks": 3800,
+  "counts": {
+    "annexe": 36,
+    "annexe_part": 7,
+    "annexe_section": 40,
+    "article": 3717
+  },
+  "errors": [],
+  "warnings": [
+    {
+      "kind": "duplicate_article_ids_within_same_document",
+      "count": 50,
+      "sample": [
+        "Article 3 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 4 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 5 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 6 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 7 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 8 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article 9 | Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée] | pages 41,121",
+        "Article premier | Règlement général de la Chambre de Compensation | pages 430,441",
+        "Article 2 | Règlement général de la Chambre de Compensation | pages 430,441",
+        "Article 3 | Règlement général de la Chambre de Compensation | pages 431,441",
+        "Article 4 | Règlement général de la Chambre de Compensation | pages 431,442",
+        "Article 5 | Règlement général de la Chambre de Compensation | pages 431,442"
+      ]
+    },
+    {
+      "kind": "article_number_jumps",
+      "count": 1,
+      "sample": [
+        "Loi n° 17-95 relative aux Sociétés anonymes [Version consolidée]: 424->441"
+      ]
+    }
+  ],
+  "hierarchy_coverage": {
+    "chunks_with_chunk_id": 3800,
+    "unique_chunk_ids": 3800,
+    "article_chunks": 3717,
+    "articles_with_document": 3717,
+    "articles_with_livre": 3717,
+    "articles_with_titre": 2568,
+    "articles_with_chapitre": 2541,
+    "articles_with_section": 1491,
+    "annexe_chunks": 83,
+    "annexe_chunks_with_annexe": 83,
+    "unique_documents": 103,
+    "unique_livres": 7,
+    "unique_titres": 129,
+    "unique_chapitres": 209,
+    "unique_sections": 300,
+    "unique_annexes": 39
+  },
+  "table_coverage": {
+    "chunks_with_tables": 46,
+    "table_refs_in_chunks": 84,
+    "article_chunks_with_tables": 5,
+    "annexe_chunks_with_tables": 41
+  },
+  "footnote_coverage": {
+    "chunks_with_footnotes": 91,
+    "footnotes": 91,
+    "numbered_footnotes": 89,
+    "continuation_footnotes": 2,
+    "chunks_with_numeric_marker_match": 26
+  }
+}

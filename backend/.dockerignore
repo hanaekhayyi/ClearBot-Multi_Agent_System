@@ -1,0 +1,27 @@
+# Exclusions Docker — backend ClearBot
+
+# Environnement Python local
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Fichiers sensibles
+.env
+*.key
+
+# Tests et évaluation (pas nécessaires en production)
+tests/
+evaluation/rapports/
+
+# Fichiers de dev
+.git/
+.gitignore
+*.md
+README*
+
+# NOTE : les dossiers vectordb/ sont INCLUS intentionnellement
+# pour que l'image embarque les bases ChromaDB pré-construites.
+# Ne pas les ajouter ici.

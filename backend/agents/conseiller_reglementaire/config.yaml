@@ -1,0 +1,23 @@
+agent_name: "ReglementaireAgent"
+description: "Répond aux questions sur la réglementation (Loi 35-96, Règlement Général Maroclear)"
+
+enabled: true
+
+# Chemin vers le pipeline RAG réglementaire (relatif à ce dossier)
+rag_project_path: "./rag"
+settings_path: "data/settings.yaml"
+
+max_history: 10    # tours de conversation mémorisés
+
+# Sources documentaires
+sources:
+  - "Loi 35-96 (Dahir n° 1-96-246)"
+  - "Règlement Général du Dépositaire Central Maroclear"
+  - "Recueil AMMC VF Mars 2026 (en cours d'intégration)"
+
+# Parsing en cours
+parsing:
+  status: "in_progress"
+  source: "Recueil AMMC VF Mars 2026"
+  pipeline: "parsing/"
+  note: "Enrichissement par métadonnées et liens inter-articles à finaliser avant intégration"

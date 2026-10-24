@@ -1,0 +1,82 @@
+# Configuration globale multi-agent
+project_name: "Maroclear Multi-Agent System"
+version: "1.0.0"
+
+# LLM via OpenRouter API
+llm:
+  provider: "openrouter"
+  model: "openai/gpt-oss-120b:free"
+  base_url: "https://openrouter.ai/api/v1"
+  api_key: ""  # Mettre votre cle OpenRouter dans .env (OPENROUTER_API_KEY)
+  temperature: 0.1
+  max_tokens: 1024
+
+embeddings:
+  provider: "ollama"
+  model: "bge-m3"
+  base_url: "http://localhost:11434"
+  batch_size: 32
+
+# RAG Settings (agent général)
+rag:
+  chunk_size: 600
+  chunk_overlap: 80
+  top_k: 8
+  similarity_threshold: 0.4
+
+# Vector Store agent général (ChromaDB local)
+vector_store:
+  provider: "chromadb"
+  persist_directory: "agents/informationnel_procedural/data/vectordb"
+  collection_name: "maroclear_knowledge"
+  distance_metric: "cosine"
+
+# Documents sources agent général
+documents:
+  sources_dir: "agents/informationnel_procedural/data/documents"
+  glossary_xlsx: "agents/informationnel_procedural/data/documents/glossaire_maroclear.xlsx"
+  supported_formats: [".pdf"]
+
+# ── RAG Réglementaire ────────────────────────────────────────────
+# Chemin vers le projet RAG_CHUNKING_PROJECT (relatif à AGENT_CONVERSATIONNEL)
+# Adapter selon ta structure de dossiers :
+#   Si les deux projets sont côte à côte : "../RAG_CHUNKING_PROJECT"
+#   Si chemin absolu : "/Users/toi/projets/RAG_CHUNKING_PROJECT"
+reglementaire:
+  enabled: true
+  rag_project_path: "agents/conseiller_reglementaire"       # relatif au working dir (backend/)
+  settings_path: "data/settings.yaml"                       # relatif à rag_project_path
+  max_history: 10                                            # tours de conversation mémorisés
+  interactive_n_results: 8                                   # profil rapide pour endpoint /chat-reglementaire
+  interactive_reranker_top_k: 6
+  interactive_max_tokens: 700
+  interactive_context_chars_per_chunk: 1800
+
+auto_dispatcher:
+  dispatcher_email: "boutanfitsalma1@gmail.com"
+  sender_email: "boutanfit@maroclear.com"
+  sender_name: "ClearBot — Agent IA Maroclear"
+  # BREVO_API_KEY doit etre dans agents/auto_dispatcher/.env
+
+# Multi-Agent Settings
+multi_agent:
+  # "classic" garde l'orchestrateur actuel.
+  # "langgraph" active le nouvel orchestrateur LangGraph.
+  orchestrator_backend: "langgraph"
+  max_iterations: 10
+  timeout_seconds: 30
+
+classification:
+  temperature: 0.2
+  max_tokens: 1200
+  history_turns: 6
+  needs_rag_keywords:
+    - "procédure"
+    - "procedure"
+    - "comment"
+    - "étapes"
+    - "etapes"
+    - "règle"
+    - "regle"
+    - "formulaire"
+    - "guide"

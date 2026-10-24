@@ -1,0 +1,22 @@
+agent_name: "ClassificationAgent"
+description: "Identifie et classifie les demandes affiliés Maroclear (Incident/Demande/Réclamation)"
+
+llm:
+  inherit: true          # hérite de backend/config/config.yaml
+  temperature: 0.2
+  max_tokens: 1200
+
+classification:
+  history_turns: 6       # nombre de tours de conversation mémorisés
+  needs_rag_keywords:
+    - "procédure"
+    - "procedure"
+    - "comment"
+    - "étapes"
+    - "etapes"
+    - "règle"
+    - "regle"
+    - "formulaire"
+    - "guide"
+
+status: "in_progress"    # classification multi-tours à finaliser

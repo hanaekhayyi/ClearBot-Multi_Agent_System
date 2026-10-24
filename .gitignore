@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.venv/
+venv/
+env/
+
+# Environment variables (contiennent des clés API — JAMAIS push)
+.env
+.env.local
+.env.production
+backend/agents/auto_dispatcher/.env
+backend/agents/support_classification/.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node
+node_modules/
+package-lock.json
+
+# Docker
+.docker/
+
+# Logs
+*.log
+processing_log.txt
+
+# Test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Sessions de test
+session_*.json
+results.txt
+
+# Feedbacks (données runtime)
+backend/data/feedbacks.json
+
+# Vector databases (trop lourds  voir Google Drive)
+**/vectordb/

@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #424242;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer components {
+  .form-input {
+    @apply w-full px-3 py-2 border border-mc-gray-border rounded-sm text-xs text-mc-dark-text bg-white focus:outline-none focus:border-mc-orange transition-colors;
+  }
+
+  .form-textarea {
+    @apply w-full px-3 py-2 border border-mc-gray-border rounded-sm text-xs text-mc-dark-text bg-white resize-none focus:outline-none focus:border-mc-orange transition-colors;
+  }
+}

@@ -1,0 +1,16 @@
+agent_name: "OrchestratorAgent"
+description: "Coordonne le fonctionnement global et redirige les requêtes vers le bon agent"
+
+routing:
+  priority:
+    - conseiller_reglementaire   # questions juridiques (Loi 35-96, RG)
+    - support_classification     # incidents / demandes / réclamations
+    - informationnel_procedural  # questions documentaires générales
+
+llm:
+  # hérite de backend/config/config.yaml
+  inherit: true
+
+multi_agent:
+  max_iterations: 10
+  timeout_seconds: 30

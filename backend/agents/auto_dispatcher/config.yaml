@@ -1,0 +1,17 @@
+agent_name: "AutoDispatcherAgent"
+description: "Remplissage automatique des formulaires et envoi email au dispatcher"
+
+email:
+  provider: "brevo"
+  # api_key: depuis .env (BREVO_API_KEY)
+  dispatcher_email: ""    # à configurer
+
+glpi:
+  enabled: false          # à activer quand GLPI est disponible
+  # api_url: ""
+  # api_token: ""
+
+templates:
+  incident: "templates/incident_email.html"
+  demande: "templates/demande_email.html"
+  reclamation: "templates/reclamation_email.html"

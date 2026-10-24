@@ -1,0 +1,68 @@
+services:
+  # Backend FastAPI
+  backend:
+    build: ./backend
+    container_name: clearbot-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+      - /app/__pycache__
+      - vectordb_info:/app/agents/informationnel_procedural/data/vectordb
+      - vectordb_regl:/app/agents/conseiller_reglementaire/data/vectordb
+    env_file:
+      - ./backend/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    restart: unless-stopped
+
+  # Dashboard Streamlit pour les evaluations
+  streamlit:
+    build: ./backend
+    container_name: clearbot-streamlit
+    profiles:
+      - evaluation
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./backend:/app
+    env_file:
+      - ./backend/.env
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONPATH=/app
+    command: python -m streamlit run evaluation/streamlit_app.py --server.port=8501 --server.address=0.0.0.0
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Frontend prive MyMaroclear
+  mymaroclear:
+    build: ./frontend/mymaroclear
+    container_name: clearbot-mymaroclear
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/mymaroclear:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Frontend public
+  portail-public:
+    build: ./frontend/portail-public
+    container_name: clearbot-portail-public
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/portail-public:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  vectordb_info:
+  vectordb_regl:

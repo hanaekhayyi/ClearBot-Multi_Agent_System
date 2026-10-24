@@ -1,0 +1,34 @@
+# -- Chunking --
+chunking:
+  chunk_size: 400
+  chunk_overlap: 0
+  encoding: "cl100k_base"
+
+# -- Embedding --
+embedding:
+  model: "BAAI/bge-m3"
+  use_fp16: false
+  batch_size: 8
+
+# -- Vector Store --
+vector_store:
+  persist_dir: "data/vectordb"
+  collection_name: "legal_chunks"
+  n_results: 30
+
+# -- Reranker (Cross-Encoder) --
+reranker:
+  enabled: false
+  model: "cross-encoder/ms-marco-MiniLM-L-12-v2"
+  top_k: 12
+
+# -- LLM (OpenRouter) --
+llm:
+  model: "openai/gpt-oss-120b:free"
+  max_tokens: 2048
+  temperature: 0.1
+  api_key: ""  # Laisser vide — sera lu depuis la variable d'environnement OPENROUTER_API_KEY
+
+# -- Données --
+data:
+  input_dir: "data/input/jsons"

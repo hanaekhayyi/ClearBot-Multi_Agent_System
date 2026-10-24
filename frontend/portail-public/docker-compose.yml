@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    ports:
+      - "5173:5173"  # ← Vite utilise le port 5173 par défaut
+    volumes:
+      - .:/app
+      - /app/node_modules
+    command: npm run dev -- --host  # ✅ Changé ici aussi

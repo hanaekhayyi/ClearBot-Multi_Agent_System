@@ -1,0 +1,336 @@
+# ======================================================================
+# MAROCLEAR — Configuration metier v8
+# Toute modification metier se fait ICI, sans toucher au code.
+# ======================================================================
+
+model:
+  provider: openrouter
+  name: openai/gpt-oss-120b:free
+  fallback: openai/gpt-4.1-nano:free
+  temperature: 0.0
+  max_tokens: 800
+  timeout_seconds: 30
+  max_retries: 3
+  retry_backoff_seconds: 2
+
+classification:
+  certainty_threshold: 0.88
+  max_clarification_questions: 3
+  valid_classes:
+    - INCIDENT
+    - DEMANDE
+    - "RECLAMATION"
+    - AMBIGU
+
+# ======================================================================
+# SERVICES PAR TYPE DE TICKET
+# ======================================================================
+
+services:
+  # -- INCIDENT : chaque service a un systeme et des cas metier --
+  incident:
+    "1":
+      label: "Post-marche-Bourse"
+      system: "TCS BaNCS"
+      description: "Prise en charge des contrats bourse, ajustement AOE et denouement"
+      keywords: ["bourse", "avis d'opere", "aoe", "denouement bourse", "contrat bourse", "marche bourse"]
+    "2":
+      label: "Post-marche-OTC"
+      system: "TCS BaNCS"
+      description: "Prise en charge des operations de gre a gre ferme et denouement"
+      keywords: ["otc", "gre a gre", "gre-a-gre", "operations otc"]
+    "3":
+      label: "Post-marche-Repo's"
+      system: "TCS BaNCS"
+      description: "Prise en charge des pensions livrees et denouement"
+      keywords: ["repo", "pension", "pension livree"]
+    "4":
+      label: "Post-marche-Transfert"
+      system: "TCS BaNCS"
+      description: "Prise en charge des transferts Franco et denouement"
+      keywords: ["transfert", "franco", "transfert franco"]
+    "5":
+      label: "Referentiel-Titres"
+      system: "MyMaroclear"
+      description: "Codification, admission, repertoire des valeurs"
+      keywords: ["isin", "codification", "admission", "referentiel titre", "instrument", "valeur"]
+    "6":
+      label: "Referentiel-Affilies"
+      system: "MyMaroclear"
+      description: "Affiliation, gestion des mandats, repertoire affilies"
+      keywords: ["affiliation", "affilie", "mandat", "repertoire affilies"]
+    "7":
+      label: "OST"
+      system: "MyMaroclear"
+      description: "Operations sur titres"
+      keywords: ["ost", "operation sur titre", "dividende", "detachement"]
+    "8":
+      label: "Reporting"
+      system: "TCS BaNCS"
+      description: "Documents comptables fin de journee (RCQ, REQ, RMQ, RSM)"
+      keywords: ["rmq", "rsm", "rcq", "req", "reporting", "document comptable", "fin de journee"]
+    "9":
+      label: "Technique"
+      system: "MyMaroclear / TCS"
+      description: "Incidents techniques sur interfaces ecrans ou echanges fichiers"
+      keywords: ["tcs banks", "tcs bancs", "mymaroclear", "plateforme", "technique", "acces", "connexion",
+                 "batch en cours", "lenteur", "page blanche", "erreur 500", "cft", "swift",
+                 "indisponible", "inaccessible"]
+    "10":
+      label: "Autre"
+      system: "MyMaroclear / TCS"
+      description: "Tout autre incident non liste"
+      keywords: []
+
+  # -- RECLAMATION : liste simple (pas de systeme, pas de cas metier) --
+  reclamation:
+    "R1":
+      label: "Releve Comptable"
+      keywords: ["releve comptable", "releve", "solde", "position"]
+    "R2":
+      label: "Denouement des Operations"
+      keywords: ["denouement", "suspens", "retard denouement", "non denoue"]
+    "R3":
+      label: "Operations sur titres (OST)"
+      keywords: ["ost", "operation sur titre", "dividende", "detachement", "ecart position"]
+    "R4":
+      label: "Reporting"
+      keywords: ["reporting", "rmq", "rsm", "rcq", "req", "document comptable"]
+    "R5":
+      label: "Codification et Admission"
+      keywords: ["codification", "admission", "isin"]
+    "R6":
+      label: "Facturation"
+      keywords: ["facture", "facturation", "montant", "droit d'admission", "tva", "ice"]
+    "R7":
+      label: "Acces Plateforme MAROCLEAR"
+      keywords: ["acces", "plateforme", "connexion", "mymaroclear"]
+    "R8":
+      label: "Affiliation"
+      keywords: ["affiliation", "affilie", "mandat"]
+    "R9":
+      label: "Service Bureau (Back-up Affilies)"
+      keywords: ["service bureau", "back-up", "backup"]
+    "R10":
+      label: "Autres"
+      keywords: []
+
+  # -- DEMANDE : liste simple --
+  demande:
+    "D1":
+      label: "Information"
+      keywords: ["information", "renseignement", "question", "communiquer", "solde",
+                 "extraction", "mouvements", "releve", "position", "donnees",
+                 "historique", "etat", "situation", "attestation"]
+    "D2":
+      label: "Assistance"
+      keywords: ["assistance", "aide", "accompagnement", "prolonger", "valider", "traitement",
+                 "retransmission", "retransmettre", "transmettre", "envoyer", "renvoyer",
+                 "mettre a disposition", "generer", "activer", "desactiver"]
+    "D3":
+      label: "Reinitialisation mot de passe TCS"
+      keywords: ["reinitialisation", "mot de passe", "password", "pin", "token", "certificat"]
+    "D4":
+      label: "Autres"
+      keywords: []
+
+# ======================================================================
+# GLPI — Matrice de priorite (INCIDENT uniquement)
+# ======================================================================
+
+glpi:
+  urgence_levels: ["Tres haute", "Haute", "Moyenne", "Basse"]
+  impact_levels:  ["Tres haut",  "Haut",  "Moyen",   "Bas"]
+  priority_levels: ["P1 Majeur", "P2 Tres haute", "P3 Moyenne", "P4 Basse"]
+
+  gravite_keywords:
+    erreur_impertinent:
+      - "message d'erreur impertinent"
+      - "message impertinent"
+    non_transmission:
+      - "non transmis"
+      - "non transmission"
+      - "documents comptables a temps"
+      - "documents non transmis"
+    arret_affilie:
+      - "arret des echanges avec un affilie"
+      - "arret avec un affilie"
+      - "echanges avec l'affilie"
+    arret_complet:
+      - "arret complet des echanges"
+      - "arret complet"
+      - "plateforme arretee"
+    lenteur:
+      - "lenteur extreme"
+      - "lenteurs extremes"
+      - "lenteur"
+      - "lent"
+      - "tres lent"
+    indisponible:
+      - "mymaroclear indisponible"
+      - "tcs bancs indisponible"
+      - "indisponible"
+      - "inaccessible"
+      - "page blanche"
+      - "erreur 500"
+    erreur_nongen:
+      - "erreur ou non-generation"
+      - "non generation"
+      - "non generes"
+      - "documents comptables de fin de journee manquants"
+      - "documents comptables de fin de journee sont manquants"
+    erreur_doc:
+      - "erreur sur un document comptable"
+      - "erreur sur document"
+      - "erreur comptable"
+    bug_affichage:
+      - "bug affichage"
+      - "affichage incorrect"
+      - "probleme d'affichage"
+    partiel:
+      - "dysfonctionnement partiel"
+      - "prise en charge partielle"
+      - "partiel"
+      - "contournable"
+    blocage_general:
+      - "blocage general du marche"
+      - "blocage general"
+      - "denouement bloque"
+      - "bloque pour tous"
+      - "totalement inaccessible"
+      - "tous les affilies"
+    blocage_affilie:
+      - "blocage d'un affilie"
+      - "operations impossibles"
+      - "je ne peux pas"
+      - "nous ne pouvons pas"
+      - "bloque pour nous"
+      - "saisie impossible"
+      - "impossible de"
+    impossible:
+      - "impossibilite de prise en charge"
+      - "impossible de"
+      - "ne peut pas"
+      - "prise en charge impossible"
+    fichiers_vides:
+      - "fichiers vides"
+      - "fichier vide"
+      - "fichiers sont vides"
+      - "vide"
+      - "corrompu"
+      - "corrompus"
+    pending_errone:
+      - "pending for fund transfer"
+      - "statut errone"
+      - "statuts bloques"
+      - "bloques en masse"
+    batch_en_cours:
+      - "batch en cours"
+      - "message d'erreur"
+
+  service_gravite_order:
+    "1": ["bug_affichage", "partiel", "blocage_general", "blocage_affilie"]
+    "2": ["partiel", "blocage_general", "blocage_affilie"]
+    "3": ["partiel", "blocage_general", "blocage_affilie"]
+    "4": ["partiel", "blocage_general", "blocage_affilie"]
+    "5": ["partiel", "impossible"]
+    "6": ["partiel", "impossible"]
+    "7": ["partiel", "impossible"]
+    "8": ["erreur_nongen", "erreur_doc"]
+    "9": ["erreur_impertinent", "non_transmission", "arret_affilie", "arret_complet",
+          "lenteur", "indisponible", "fichiers_vides", "pending_errone", "batch_en_cours"]
+    "10": ["autre"]
+
+  default_gravite:
+    "1": "blocage_affilie"
+    "2": "blocage_affilie"
+    "3": "blocage_affilie"
+    "4": "blocage_affilie"
+    "5": "impossible"
+    "6": "impossible"
+    "7": "impossible"
+    "8": "erreur_doc"
+    "9": "indisponible"
+    "10": "autre"
+
+  matrix:
+    "1":
+      blocage_general:   ["Tres haute", "Tres haut",  "P1 Majeur"]
+      blocage_affilie:   ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Moyen",      "P3 Moyenne"]
+      bug_affichage:     ["Basse",      "Bas",        "P4 Basse"]
+    "2":
+      blocage_general:   ["Tres haute", "Tres haut",  "P1 Majeur"]
+      blocage_affilie:   ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Moyen",      "P3 Moyenne"]
+    "3":
+      blocage_general:   ["Tres haute", "Tres haut",  "P1 Majeur"]
+      blocage_affilie:   ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Bas",        "P3 Moyenne"]
+    "4":
+      blocage_general:   ["Tres haute", "Moyen",      "P2 Tres haute"]
+      blocage_affilie:   ["Tres haute", "Moyen",      "P3 Moyenne"]
+      partiel:           ["Moyenne",    "Bas",        "P3 Moyenne"]
+    "5":
+      impossible:        ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Moyen",      "P3 Moyenne"]
+    "6":
+      impossible:        ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Moyen",      "P3 Moyenne"]
+    "7":
+      impossible:        ["Tres haute", "Moyen",      "P2 Tres haute"]
+      partiel:           ["Moyenne",    "Moyen",      "P3 Moyenne"]
+    "8":
+      erreur_nongen:     ["Tres haute", "Tres haut",  "P1 Majeur"]
+      erreur_doc:        ["Tres haute", "Moyen",      "P2 Tres haute"]
+    "9":
+      indisponible:      ["Tres haute", "Tres haut",  "P1 Majeur"]
+      lenteur:           ["Tres haute", "Tres haut",  "P1 Majeur"]
+      arret_complet:     ["Tres haute", "Tres haut",  "P1 Majeur"]
+      arret_affilie:     ["Tres haute", "Moyen",      "P2 Tres haute"]
+      non_transmission:  ["Moyenne",    "Moyen",      "P3 Moyenne"]
+      erreur_impertinent: ["Basse",     "Bas",        "P4 Basse"]
+      fichiers_vides:    ["Tres haute", "Tres haut",  "P1 Majeur"]
+      pending_errone:    ["Tres haute", "Moyen",      "P2 Tres haute"]
+      batch_en_cours:    ["Tres haute", "Moyen",      "P2 Tres haute"]
+    "10":
+      autre:             ["Qualifiee par dispatcher", "Qualifie par dispatcher", "Qualifiee par dispatcher"]
+
+# ======================================================================
+# QUESTIONS DE CLARIFICATION
+# ======================================================================
+
+questions:
+  Q1_collectif: >
+    Quelle est la nature exacte du probleme : dysfonctionnement technique/blocage,
+    fichier metier inexploitable, contenu de facture ou donnee erronee,
+    ou simple demande d'action/information ?
+  Q2_contenu_type: >
+    Ce document ou cette donnee concerne-t-il un flux metier
+    (avis d'opere, fichier comptable RSM/RCQ/REQ, flux CFT)
+    ou une facture / donnee de facturation ?
+  Q3_token_cause: >
+    Le token ou certificat a-t-il ete perdu suite a une panne de votre poste,
+    ou s'agit-il d'un nouveau materiel (changement de poste prevu) ?
+  Q4_action_ou_constat: >
+    Souhaitez-vous que nous vous retransmettions ce document,
+    ou constatez-vous qu'il est manquant ou errone ?
+  Q5_retransmission: >
+    Cette demande de retransmission fait-elle suite a une non-reception
+    de documents attendus, ou est-ce une demande generique ?
+  Q6_suspens_actif: >
+    Ce suspens ou retard de denouement est-il toujours en cours en ce moment,
+    ou s'agit-il d'un prejudice deja subi ?
+  Q7_screenshot: >
+    Avez-vous un message d'erreur affiche a l'ecran ?
+    Si oui, pouvez-vous joindre une capture d'ecran ?
+
+  triggers:
+    Q2_contenu_type: ["rsm", "aoe", "rcq", "req", "rmq", "fichier", "document", "non recu",
+                      "non recu", "manquant", "errone", "incomplet", "vide", "corrompu"]
+    Q3_token_cause: ["token", "certificat", "rsa"]
+    Q4_action_ou_constat: ["retransmission", "retransmettre", "renvoyer", "transmettre",
+                           "mettre a disposition", "communiquer"]
+    Q5_retransmission: ["retransmission", "retransmettre", "renvoyer"]
+    Q6_suspens_actif: ["suspens", "retard", "denouement"]
+    Q7_screenshot: ["erreur", "bug", "page blanche", "message d'erreur", "ecran"]

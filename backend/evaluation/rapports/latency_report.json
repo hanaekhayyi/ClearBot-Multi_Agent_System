@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-06-11T15:24:24",
+  "base_url": "http://localhost:8000",
+  "runs_per_route": 5,
+  "warmup_per_route": 1,
+  "environment": {
+    "python": "3.11.9",
+    "system": "Windows",
+    "release": "10",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 4, GenuineIntel"
+  },
+  "results": [
+    {
+      "route": "GET /chat-session",
+      "runs": 5,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 4.78,
+      "median_ms": 4.71,
+      "p95_ms": 5.98,
+      "min_ms": 2.96,
+      "max_ms": 5.98,
+      "errors": []
+    },
+    {
+      "route": "POST /chat public - identité",
+      "runs": 5,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 6.57,
+      "median_ms": 6.84,
+      "p95_ms": 7.92,
+      "min_ms": 5.2,
+      "max_ms": 7.92,
+      "errors": []
+    },
+    {
+      "route": "POST /chat private - classification",
+      "runs": 5,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 14777.18,
+      "median_ms": 12381.88,
+      "p95_ms": 25423.78,
+      "min_ms": 6746.32,
+      "max_ms": 25423.78,
+      "errors": []
+    },
+    {
+      "route": "POST /chat-informationnel",
+      "runs": 5,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 7661.55,
+      "median_ms": 8323.1,
+      "p95_ms": 9693.51,
+      "min_ms": 5492.95,
+      "max_ms": 9693.51,
+      "errors": []
+    },
+    {
+      "route": "POST /chat-reglementaire",
+      "runs": 5,
+      "status_codes": [
+        0,
+        200
+      ],
+      "success_rate": 0.2,
+      "mean_ms": 121113.22,
+      "median_ms": 122035.5,
+      "p95_ms": 122068.79,
+      "min_ms": 119374.76,
+      "max_ms": 122068.79,
+      "errors": [
+        "ReadTimeout: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=120)",
+        "ReadTimeout: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=120)",
+        "ReadTimeout: HTTPConnectionPool(host='localhost', port=8000): Read timed out. (read timeout=120)"
+      ]
+    },
+    {
+      "route": "POST /feedback",
+      "runs": 5,
+      "status_codes": [
+        200
+      ],
+      "success_rate": 1.0,
+      "mean_ms": 39.51,
+      "median_ms": 39.84,
+      "p95_ms": 46.98,
+      "min_ms": 33.5,
+      "max_ms": 46.98,
+      "errors": []
+    }
+  ]
+}
