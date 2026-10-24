@@ -12,19 +12,6 @@ Système multi-agents conversationnel pour le dépositaire central des titres au
 | **Réglementaire** | RAG juridique (Recueil AMMC, Loi 35-96, circulaires) |
 | **Auto-Dispatcher** | Notification email structurée au dispatcher avec priorité GLPI |
 
-## Démarrage rapide (Docker)
-
-```bash
-git clone https://github.com/Boutanfitsalma/ClearBot--Systeme-multi-agents-Maroclear.git
-cd ClearBot--Systeme-multi-agents-Maroclear
-
-# Configurer les clés API
-cp backend/.env.example backend/.env
-# Éditer backend/.env et renseigner OPENROUTER_API_KEY et BREVO_API_KEY
-
-# Lancer tous les services
-docker-compose up --build
-```
 
 Les bases vectorielles ChromaDB sont embarquées dans l'image — **aucune re-indexation nécessaire**.
 
